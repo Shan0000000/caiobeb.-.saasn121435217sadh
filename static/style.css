@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    height: 100vh;
+    background-image: url('background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Wrapper for the form */
+.wraper {
+    background: rgba(255, 255, 255, 0.1); /* Light background with opacity for glassy effect */
+    padding: 30px 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Creates the glassy effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    color: white;
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Input Boxes */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on focus */
+}
+
+.user-icon {
+    position:absolute;
+    top: 50%; /* Adjust this value for the user icon */
+    left: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+.password-icon {
+    position:absolute;
+    top: 26%; /* Adjust this value for the password icon */
+    left: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Show Password Checkbox */
+input[type="checkbox"] {
+    margin-top: 10px;
+    color: white;
+}
+
+/* Remember Me & Forget Password */
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-forget label {
+    color: white;
+    font-size: 14px;
+}
+
+.remember-forget a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #9b59b6; /* Purple shade that matches the background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8e44ad; /* Darker shade of purple on hover */
+}
+
+/* Register Link */
+.register p {
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.register a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}

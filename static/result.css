@@ -1,0 +1,70 @@
+body {
+  background: url('r3.jpg') repeat-y;
+  background-size: 100% auto;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+  
+  .notebook {
+    background-color:rgba(4, 29, 95, 0.836);
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid #aaa;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .entry {
+    margin-bottom: 2rem;
+    border-left: 4px solid #f99;
+    padding-left: 1rem;
+  }
+  
+  .comment {
+    margin-top: 0.5rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  button {
+    background-color: #f4a261;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  
+  button:hover {
+    background-color: #e76f51;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(220,174,150); /* optional: makes text more readable */
+    line-height: 1.8;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+    border-top:4px solid #130909 ;
+    border-bottom:4px solid #130909; 
+    border-right: 4px solid #130909;
+    border-left: 4px solid #130909; /* to look like a notebook margin */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
+  }

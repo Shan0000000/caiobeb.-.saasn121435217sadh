@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Notebook</title>
+  <link rel="stylesheet" href="../static/result.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Your Secret Notebook</h2>
+    <p>Your oppinion: {{ q1 }} —<br> 
+    MY oppinion: {{ c1 }}</p>
+    <p>Q2:................................. </p>
+    <p>Q3: ............................</p>
+    <p>Q4: ...........................</p>
+
+    <form action="{{ url_for('bday') }}">
+      <button type="submit">Continue to Your Bday Page</button>
+    </form>
+  </div>
+</body>
+</html>

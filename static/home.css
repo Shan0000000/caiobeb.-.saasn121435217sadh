@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+  }
+  
+  /* Body with spooky infinite scrolling backdrop */
+  body {
+    min-height: 400vh; /* Makes the page 4x the normal height */
+    background-image: url('n2.jpg'); /* Replace with your backdrop */
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20vh; /* Form starts with space */
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Glassy wrapper */
+  .wrapper {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    animation: fadeSlideIn 2s ease;
+  }
+  
+  /* Opening animation */
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Heading with glowing touch */
+  h1 {
+    font-size: 26px;
+    color: #e0d4f7;
+    text-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
+    margin-bottom: 30px;
+  }
+  
+  /* Input Containers */
+  .input-box {
+    margin-bottom: 40px; /* Adds more space between fields */
+    text-align: left;
+  }
+  
+  .input-box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #f2f2f2;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .input-box input:focus {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Submit Button */
+  .btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #7f5af0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background: #6246ea;
+  }
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>s
+    <link rel="stylesheet" href="../static/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body >
+    
+    <div class="wraper">
+ 
+        <form method="POST">
+
+            <h1>
+                Welcome Jim
+            </h1>
+        <div class="input-box">
+            <input type="text" , name="username" , placeholder="Your Name?" required>
+            <img class="user-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAURJREFUSEvF1L8rRXEYx/HXTWaEwSiZLIpVRgulKBaLzWLwa7QopURS/gRZ5FcW/wAlGWQiIykMKKX8OKdc3c69557bOW6+2znn+3zen+fp85ycKp9clfVVCujFIjp+DF1gDsdJBisBjGKTIjOfGMRBOUgSoB43aIgRuUMb3uIgSYDQ4U7CGPpwlBYwjeUEwBRW0wIGsJ8A6MdhWkAdrtEUI3CPdrykBYR1I9gqIRCmaAi7WVKUr+3B0s8efOASszj5iz1I0ij7PSmmmcTD4nKAZswEm9oVzLkTjRHaI85xihU8lHITBxgLBNeDfIcpquQ8YRx70culAJPBr2GtEtUSd4axXfg+CmjFFWpSAl4RavyOKwrYwERK8XzZfGBwIf8QBdyiJSPgDN1xgHfUZgQ8F4Yj2sFXRvEi4/+6aH/STNU7+AYkwS0ZwQsJ3gAAAABJRU5ErkJggg=="/>
+
+        </div>
+        <div class="input-box"> 
+            <input type="password" , name="password" id="myInput" required placeholder="Date">
+            <img class="password-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR9JREFUSEvF1b8uBUEUx/HP9QqiUPqTSKi8AgUPIB5AJ1SioyBuolCoeAYSoia8go5EQqIShXgDwSSzibu5u7O79uZONdkz+/ue85szMx0DHp0B66sKWME6FmJCdzjBVSrBKoAjbBcI7WG/DJICrOI8ChzgNM43sRPnS7gpgqQA95jHFo5zIgHQxTWWmwK+MPLr9xg+ciLjeMMnRpsCvuOPRZWm4skuSgmk4sMBhJ4PmzeT6vFc/Am7uPj7vZ+3D5itKZ4tf8RcCpD52pDRa3u/CoYGOMNGLCtcH2sFJfYkXaeCCbxG0Sk8tw0IJ/c9ik7ipW3AJUILh3GLxbYBQS+ztKwRGu9Ba4CBH7Tg8yGma560yldFTd3y5akX7d+wH5leMxkPQZ+dAAAAAElFTkSuQmCC"/>
+
+
+<!-- An element to toggle between password visibility -->
+        <input type="checkbox" onclick="myFunction()">Show Password
+         <script>  
+         
+
+
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+ 
+        </script>
+    
+         </div>
+         <div class="remember-forget">
+
+            <label> <input type="checkbox"
+                >
+            <a href="#"
+            ></a>
+            Remember me</label>
+         </div>
+         <button type="submit" class="btn">
+            <a>Start</a>
+        </button>
+        
+        
+           
+
+        
+        </form>
+
+
+
+    </div>
+</body>
+</html>
+

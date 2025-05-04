@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>প্রশ্নোত্তর খেলা</title>
+  <link rel="stylesheet" href="../static/home.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <form method="POST" action="{{ url_for('result') }}">
+      <h1> প্রত্যেক ক্রিয়ার একটি সমান ও বিপরীত প্রতিক্রিয়া থাকে।</h1>
+
+      <div class="input-box">
+        <label>1.শেষ টা খারাপ জেনেও মানুষ কেনো রিলেশনে যায়? </label>
+        <input type="text" name="q1" placeholder="উত্তর দিতে তুমি বাধ্য না"/>
+      </div>
+
+      <div class="input-box">
+        <label>2.</label>
+        <input type="text" name="q2"/>
+      </div>
+
+      <div class="input-box">
+        <label>3. </label>
+        <input type="text" name="q3" />
+      </div>
+
+      <div class="input-box">
+        <label>4.  </label>
+        <input type="text" name="q4"/>
+      </div>
+
+      <button type="submit" class="btn">জমা দাও</button>
+    </form>
+  </div>
+</body>
+</html>
